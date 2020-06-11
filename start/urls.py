@@ -19,6 +19,12 @@ from start import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("",include('start.urls')),
+
+    path('',views.index),
+    path('about/',views.about),
+    path('contact/',views.contact),
+    path('destinations/',views.destinations),
+    path('elements/',views.elements),
+    path('news/',views.news),   
+
 ]
