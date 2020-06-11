@@ -16,15 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from start import views
-
+from django.views.generic import TemplateView
 
 urlpatterns = [
 
     path('',views.index),
-    path('about/',views.about),
-    path('contact/',views.contact),
-    path('destinations/',views.destinations),
-    path('elements/',views.elements),
-    path('news/',views.news),   
+    path('about/',TemplateView.as_view(template_name="about.html")),
+    path('contact/',TemplateView.as_view(template_name="contact.html")),
+    path('destinations/',TemplateView.as_view(template_name="destinations.html")),
+    path('elements/',TemplateView.as_view(template_name="elements.html")),
+    path('news/',TemplateView.as_view(template_name="news.html")),   
 
 ]
