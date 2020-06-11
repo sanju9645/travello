@@ -10,36 +10,42 @@ def index(request):
     dest1.price=800
     dest1.desc="asdfffgggjjgjgjg"
     dest1.img="destination_6.jpg"
+    dest1.offer=True
 
     dest2 = destination()
     dest2.name="Calicut"
     dest2.price=1000
     dest2.desc="hfuherfuurfugrfrgfrg"
     dest2.img="destination_5.jpg"
+    dest2.offer=False
 
     dest3 = destination()
     dest3.name="Wayanad"
     dest3.price=1200
     dest3.desc="iurfigrfgrfubrubvr"
     dest3.img="destination_4.jpg"
+    dest3.offer=True
 
     dest4 = destination()
     dest4.name="Kannur"
     dest4.price=850
     dest4.desc="asdfffgggrfrfrfrfrfrfrfjjgjgjg"
     dest4.img="destination_3.jpg"
+    dest4.offer=False
 
     dest5 = destination()
     dest5.name="Malappuram"
     dest5.price=8000
     dest5.desc="wsdwwswswswswswswswswsw"
     dest5.img="destination_2.jpg"
+    dest5.offer=True
 
     dest6 = destination()
     dest6.name="Kottayam"
     dest6.price=400
     dest6.desc="asassasasasasasasasasasasasg"
     dest6.img="destination_1.jpg"
+    dest6.offer=False
 
     dests=[dest1,dest2,dest3,dest4,dest5,dest6]
 

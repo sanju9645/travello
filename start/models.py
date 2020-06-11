@@ -8,4 +8,5 @@ class destination:
     img : str
     desc : str
     price : float
+    offer : bool
  
